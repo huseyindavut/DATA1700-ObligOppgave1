@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="application.js"></script>
+</head>
+<body >
+<div style="border: solid 3px #1414b0; width:550px; margin-left: 5px ">
+
+    <h1 style="margin-left: 5px">Bestilling av kinobiletter</h1>
+    <form id="bestillingForm" style="margin-left: 5px;">
+        Velg Film: <select id="slecetFilm" style="margin-left: 10px;">
+        <option value="velgFilm" >Velg film her</option>
+        <option value="Aquaman and the Lost Kingdom">Aquaman and the Lost Kingdom</option>
+        <option value="Citizen Kane">Citizen Kane</option>
+        <option value="Jaws">Jaws</option>
+        <option value="Killers of the Flower Moon">Killers of the Flower Moon</option>
+        <option value="Oppenheimer">Oppenheimer</option>
+        <option value="Rain Man">Rain Man</option>
+        <option value="Seven">Seven</option>
+        <option value="Seven Samurai">Seven Samurai</option>
+        <option value="Star Wars">Star Wars</option>
+        <option value="The Godfather ">The Godfather</option>
+        <option value="The King's Choice">The King's Choice</option>
+        <option value="Unforgiven">Unforgiven</option>
+        <option value="Wonka">Wonka</option>
+
+
+    </select><br><br>
+        Antall : <input id="antall" type="number" min="1" style="width: 35px"><span id="feilMeldingAntall" style="color: red"></span><br><br>
+        Fornavn : <input id="fornavn" type="text" style="margin-left: 31px;margin-bottom: 5px"><span id="feilMeldingFornavn" style="color: red"></span><br>
+        Etternavn : <input id="etternavn" type="text" style="margin-left: 22px;margin-bottom: 5px"><span id="feilMeldingEtternavn" style="color: red"></span><br>
+        Telefonnr : <input id="telefonnr" type="tel" pattern="[0-9]{8}" required style="margin-left: 22.5px;margin-bottom: 5px"><span id="feilMeldingTlfnr" style="color: red"></span><br>
+        Email : <input id="email" type="text" style="margin-left: 47px;margin-bottom: 5px"><span id="feilMeldingEmail" style="color: red"></span><br><br>
+    </form>
+
+    <button onclick="validation()" value="" style="margin-left: 5px;border-radius: 7px;border-color:#1414da ">Kjøp bilett</button>
+
+    <br><br>
+
+    <h3 style="margin-left: 5px">Alle Billetter</h3>
+
+    <table style="margin-left: 5px">
+        <thead>
+        <th>Film</th>
+        <th>Antall</th>
+        <th>Fornavn</th>
+        <th>Etternavn</th>
+        <th>TelefonNr</th>
+        <th>Email</th>
+        </thead>
+
+        <tbody id="table">
+        </tbody>
+    </table>
+
+    <br>
+
+    <button onclick="slett()" style="margin-left: 5px;border-radius: 7px;border-color:#1414da ">Slett alle billettene</button>
+    <br><br>
+
+</div>
+</body>
+</html>
