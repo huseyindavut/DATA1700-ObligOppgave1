@@ -1,3 +1,5 @@
+let ut="";
+
 function validation() {
     let film = document.getElementById("slecetFilm").value;
     let antall = document.getElementById("antall").value;
@@ -66,7 +68,7 @@ function validation() {
 
     }
     ut += "</tr>";
-    document.getElementById("table").innerHTML = ut;
+    document.getElementById("bestillingTable").innerHTML = ut;
 
     // For å tilbakestille skjemafelt
     document.getElementById("bestillingForm").reset();
