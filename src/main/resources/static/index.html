@@ -6,11 +6,13 @@
     <script src="application.js"></script>
 </head>
 <body >
+
 <div style="border: solid 2px #1414b0; width:550px; margin-left: 5px ">
 
     <h1 style="margin-left: 5px">Bestilling av kinobiletter</h1>
 
     <form id="bestillingForm" style="margin-left: 5px;">
+
         Velg Film: <select id="slecetFilm" style="margin-left: 10px;">
         <option value="velgFilm" >Velg film her</option>
         <option value="Aquaman and the Lost Kingdom">Aquaman and the Lost Kingdom</option>
@@ -28,7 +30,9 @@
         <option value="Wonka">Wonka</option>
 
 
-    </select><br><br>
+      </select>
+
+        <br><br>
 
         Antall : <input id="antall" type="number" min="1" style="width: 35px"><span id="feilMeldingAntall" style="color: red"></span><br><br>
         Fornavn : <input id="fornavn" type="text" style="margin-left: 31px;margin-bottom: 5px"><span id="feilMeldingFornavn" style="color: red"></span><br>
@@ -41,16 +45,16 @@
 
     <br><br>
 
-    <h3 style="margin-left: 5px">Alle Billetter</h3>
+    <h2 style="margin-left: 5px">Alle Billetter</h2>
 
     <table style="margin-left: 5px">
         <thead >
-        <th >Film</th>
-        <th>Antall</th>
-        <th>Fornavn</th>
-        <th>Etternavn</th>
-        <th>TelefonNr</th>
-        <th>Email</th>
+          <th >Film</th>
+          <th>Antall</th>
+          <th>Fornavn</th>
+          <th>Etternavn</th>
+          <th>TelefonNr</th>
+          <th>Email</th>
         </thead>
 
         <tbody id="bestillingTable">
@@ -60,6 +64,7 @@
     <br>
 
     <button onclick="slett()" style="margin-left: 5px;border-radius: 7px;border-color:#1414da ">Slett alle billettene</button>
+
     <br><br>
 
 </div>

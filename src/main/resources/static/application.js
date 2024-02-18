@@ -72,4 +72,10 @@ function validation() {
 
     // For å tilbakestille skjemafelt
     document.getElementById("bestillingForm").reset();
+
 }
+function slett(){
+    ut="";
+    document.getElementById("table").innerHTML=ut;
+}
+
