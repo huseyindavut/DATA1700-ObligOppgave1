@@ -6,16 +6,16 @@ function validation() {
     let fornavn = document.getElementById("fornavn").value;
     let etternavn = document.getElementById("etternavn").value;
     let telefonnr = document.getElementById("telefonnr").value;
-    let email = document.getElementById("email").value;
+    let epost = document.getElementById("epost").value;
 
-    console.log(film, antall, fornavn, etternavn, telefonnr, email)
+    console.log(film, antall, fornavn, etternavn, telefonnr, epost)
 
-    if (antall === "" || fornavn === "" || etternavn === "" || telefonnr === "" || email === "") {
+    if (antall === "" || fornavn === "" || etternavn === "" || telefonnr === "" || epost=== "") {
         document.getElementById("feilMeldingAntall").innerText = " Må skrive noe inn i antall";
         document.getElementById("feilMeldingFornavn").innerText = " Må skrive noe inn i fornavn";
         document.getElementById("feilMeldingEtternavn").innerText = " Må skrive noe inn i etternavn";
-        document.getElementById("feilMeldingTlfnr").innerText = " Må skrive noe inn i telefonnr";
-        document.getElementById("feilMeldingEmail").innerText = " Må skrive noe inn i email";
+        document.getElementById("feilMeldingTelefonnr").innerText = " Må skrive noe inn i telefonnr";
+        document.getElementById("feilMeldingEpost").innerText = " Må skrive noe inn i epost";
     }
 
     // kontrol av fornavn formatt
@@ -39,9 +39,9 @@ function validation() {
         return;
     }
 
-    // kontrol av email formatt
+    // kontrol av epost formatt
     const emailRgl = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRgl.test(email)) {
+    if (!emailRgl.test(epost)) {
         alert("Skriv inn et gyldig epost adresse.");
         return;
     }
@@ -53,7 +53,7 @@ function validation() {
         fornavn: fornavn,
         etternavn: etternavn,
         telefonnr: telefonnr,
-        email: email
+        epost: epost
     });
     console.log(filmInfo)
 
@@ -64,7 +64,7 @@ function validation() {
             "<th>" + f.fornavn + "</th>" +
             "<th>" + f.etternavn + "</th>" +
             "<th>" + f.telefonnr + "</th>" +
-            "<th>" + f.email + "</th>";
+            "<th>" + f.epost + "</th>";
 
     }
     ut += "</tr>";
