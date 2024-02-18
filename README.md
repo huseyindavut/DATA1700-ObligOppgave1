@@ -4,4 +4,4 @@ Bestilling av Kinobiletter
 
 GitHub:https://github.com/huseyindavut/DATA1700-ObligOppgave1.git
 
-Huseyin Davutoglu
+Huseyin Davutoglu  (studentnummer: 381403)
