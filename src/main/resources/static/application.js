@@ -74,6 +74,7 @@ function validation() {
     document.getElementById("bestillingForm").reset();
 
 }
+//slett function
 function slett(){
     document.getElementById("bestillingTable").innerHTML=ut;
     ut="";
