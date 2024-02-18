@@ -1,7 +1,7 @@
 let ut="";
 
 function validation() {
-    let film = document.getElementById("slecetFilm").value;
+    let film = document.getElementById("selectFilm").value;
     let antall = document.getElementById("antall").value;
     let fornavn = document.getElementById("fornavn").value;
     let etternavn = document.getElementById("etternavn").value;
@@ -48,7 +48,7 @@ function validation() {
 
     filmInfo = [];
     filmInfo.push({
-        filn: film,
+        film: film,
         antall: antall,
         fornavn: fornavn,
         etternavn: etternavn,
@@ -57,9 +57,9 @@ function validation() {
     });
     console.log(filmInfo)
 
-    let ut = "<tr>";
+    ut += "<tr>";
     for (f of filmInfo) {
-        ut += "<th>" + f.filn + "</th>" +
+        ut += "<th>" + f.film + "</th>" +
             "<th>" + f.antall + "</th>" +
             "<th>" + f.fornavn + "</th>" +
             "<th>" + f.etternavn + "</th>" +
@@ -75,7 +75,7 @@ function validation() {
 
 }
 function slett(){
+    document.getElementById("bestillingTable").innerHTML=ut;
     ut="";
-    document.getElementById("table").innerHTML=ut;
 }
 
