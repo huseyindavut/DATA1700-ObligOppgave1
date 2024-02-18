@@ -1,6 +1,6 @@
-DATA1700 Obliogatorisk Oppgave 1
+DATA1700 Obliogatorisk Obligatorisk Oppgave 1
 
-Bestilling av Kinobiletter
+Oblig 1: Bestilling av kinobilletter (kun på klient)
 
 GitHub:https://github.com/huseyindavut/DATA1700-ObligOppgave1.git
 
